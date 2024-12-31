@@ -46,6 +46,7 @@
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label4 = new System.Windows.Forms.Label();
             this.ckBoxInput = new System.Windows.Forms.CheckBox();
+            this.恢复ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.numWrkTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRstTime)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -159,6 +160,7 @@
             this.contextMenuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.主窗体ToolStripMenuItem,
+            this.恢复ToolStripMenuItem,
             this.关于ToolStripMenuItem,
             this.exit_ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -207,6 +209,13 @@
             this.ckBoxInput.Text = "休息时屏蔽键盘和鼠标";
             this.ckBoxInput.UseVisualStyleBackColor = true;
             // 
+            // 恢复ToolStripMenuItem
+            // 
+            this.恢复ToolStripMenuItem.Name = "恢复ToolStripMenuItem";
+            this.恢复ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.恢复ToolStripMenuItem.Text = "恢复";
+            this.恢复ToolStripMenuItem.Click += new System.EventHandler(this.恢复ToolStripMenuItem_Click);
+            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -231,7 +240,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sedentary Reminder";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainFrm_FormClosing);
-            this.Load += new System.EventHandler(this.MainFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numWrkTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRstTime)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
@@ -258,5 +266,6 @@
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox ckBoxInput;
+        private System.Windows.Forms.ToolStripMenuItem 恢复ToolStripMenuItem;
     }
 }

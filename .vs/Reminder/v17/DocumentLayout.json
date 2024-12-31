@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\31386\\Documents\\GitHub\\Sedentary-reminder-on-hour\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90E555B9-A8FA-45DC-A452-5CD7C0220EAC}|Reminder\\Sedentary Reminder.csproj|c:\\users\\31386\\documents\\github\\sedentary-reminder-on-hour\\reminder\\aboutbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90E555B9-A8FA-45DC-A452-5CD7C0220EAC}|Reminder\\Sedentary Reminder.csproj|solutionrelative:reminder\\aboutbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90E555B9-A8FA-45DC-A452-5CD7C0220EAC}|Reminder\\Sedentary Reminder.csproj|c:\\users\\31386\\documents\\github\\sedentary-reminder-on-hour\\reminder\\aboutbox.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90E555B9-A8FA-45DC-A452-5CD7C0220EAC}|Reminder\\Sedentary Reminder.csproj|solutionrelative:reminder\\aboutbox.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90E555B9-A8FA-45DC-A452-5CD7C0220EAC}|Reminder\\Sedentary Reminder.csproj|c:\\users\\31386\\documents\\github\\sedentary-reminder-on-hour\\reminder\\aboutbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90E555B9-A8FA-45DC-A452-5CD7C0220EAC}|Reminder\\Sedentary Reminder.csproj|solutionrelative:reminder\\aboutbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90E555B9-A8FA-45DC-A452-5CD7C0220EAC}|Reminder\\Sedentary Reminder.csproj|c:\\users\\31386\\documents\\github\\sedentary-reminder-on-hour\\reminder\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90E555B9-A8FA-45DC-A452-5CD7C0220EAC}|Reminder\\Sedentary Reminder.csproj|solutionrelative:reminder\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90E555B9-A8FA-45DC-A452-5CD7C0220EAC}|Reminder\\Sedentary Reminder.csproj|C:\\Users\\31386\\Documents\\GitHub\\Sedentary-reminder-on-hour\\reminder\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90E555B9-A8FA-45DC-A452-5CD7C0220EAC}|Reminder\\Sedentary Reminder.csproj|solutionrelative:reminder\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AboutBox.cs",
+              "DocumentMoniker": "C:\\Users\\31386\\Documents\\GitHub\\Sedentary-reminder-on-hour\\Reminder\\AboutBox.cs",
+              "RelativeDocumentMoniker": "Reminder\\AboutBox.cs",
+              "ToolTip": "C:\\Users\\31386\\Documents\\GitHub\\Sedentary-reminder-on-hour\\Reminder\\AboutBox.cs",
+              "RelativeToolTip": "Reminder\\AboutBox.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:51:02.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AboutBox.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\31386\\Documents\\GitHub\\Sedentary-reminder-on-hour\\Reminder\\AboutBox.Designer.cs",
+              "RelativeDocumentMoniker": "Reminder\\AboutBox.Designer.cs",
+              "ToolTip": "C:\\Users\\31386\\Documents\\GitHub\\Sedentary-reminder-on-hour\\Reminder\\AboutBox.Designer.cs",
+              "RelativeToolTip": "Reminder\\AboutBox.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:50:59.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AboutBox.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\31386\\Documents\\GitHub\\Sedentary-reminder-on-hour\\Reminder\\AboutBox.cs",
+              "RelativeDocumentMoniker": "Reminder\\AboutBox.cs",
+              "ToolTip": "C:\\Users\\31386\\Documents\\GitHub\\Sedentary-reminder-on-hour\\Reminder\\AboutBox.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Reminder\\AboutBox.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:50:55.225Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainFrm.cs",
+              "DocumentMoniker": "C:\\Users\\31386\\Documents\\GitHub\\Sedentary-reminder-on-hour\\Reminder\\MainFrm.cs",
+              "RelativeDocumentMoniker": "Reminder\\MainFrm.cs",
+              "ToolTip": "C:\\Users\\31386\\Documents\\GitHub\\Sedentary-reminder-on-hour\\Reminder\\MainFrm.cs",
+              "RelativeToolTip": "Reminder\\MainFrm.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAApwC8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T10:26:52.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainFrm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\31386\\Documents\\GitHub\\Sedentary-reminder-on-hour\\Reminder\\MainFrm.cs",
+              "RelativeDocumentMoniker": "Reminder\\MainFrm.cs",
+              "ToolTip": "C:\\Users\\31386\\Documents\\GitHub\\Sedentary-reminder-on-hour\\Reminder\\MainFrm.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Reminder\\MainFrm.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T10:25:37.818Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

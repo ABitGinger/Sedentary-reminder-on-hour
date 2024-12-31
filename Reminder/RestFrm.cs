@@ -13,6 +13,7 @@ namespace Reminder
 {
     public partial class RestFrm : Form
     {
+        private const int DEFAULT_WORK_MINUTES = 27;
         private int rst_m;
         private int wrk_m;
         private int rst_m2;
@@ -125,8 +126,45 @@ namespace Reminder
 
                     if (rst_s == 0)
                     {
-                        WorkFrm workFrm = new WorkFrm(wrk_m, rst_m2, input_flag);
-                        workFrm.Show();
+                        WorkFrm wrkFrm;
+                        if (MainFrm.IsAlignMode())
+                        {
+                            // 计算到下一个时间点的分钟数
+                            DateTime now = DateTime.Now;
+                            int currentMinute = now.Minute;
+                            int currentSecond = now.Second;
+                            
+                            int minutes;
+                            int seconds;
+                            
+                            if (currentMinute >= 30)
+                            {
+                                minutes = 59 - currentMinute;
+                                seconds = 60 - currentSecond;
+                                if (seconds == 60)
+                                {
+                                    seconds = 0;
+                                    minutes++;
+                                }
+                            }
+                            else
+                            {
+                                minutes = 29 - currentMinute;
+                                seconds = 60 - currentSecond;
+                                if (seconds == 60)
+                                {
+                                    seconds = 0;
+                                    minutes++;
+                                }
+                            }
+
+                            wrkFrm = new WorkFrm(minutes, seconds, rst_m2, input_flag);
+                        }
+                        else
+                        {
+                            wrkFrm = new WorkFrm(wrk_m, 0, rst_m2, input_flag);
+                        }
+                        wrkFrm.Show();
                     }
                     this.Close();
                 }

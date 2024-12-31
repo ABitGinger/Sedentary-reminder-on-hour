@@ -23,12 +23,12 @@ namespace Reminder
             InitializeComponent();
         }
         //定义一个构造函数，接受前一个窗体传来的参数
-        public WorkFrm(int wrk_minutes, int rst_minutes,bool input_flag)
+        public WorkFrm(int wrk_minutes, int wrk_seconds, int rst_minutes, bool input_flag)
         {
             InitializeComponent();           
             this.wrk_minutes = wrk_minutes;
+            this.wrk_seconds = wrk_seconds;
             this.rst_minutes = rst_minutes;
-            //this.input_flag = input_flag;
             this.wrk_m = wrk_minutes;
             this.input_flag = input_flag;
 
@@ -38,25 +38,14 @@ namespace Reminder
             this.PointToScreen(p);
             this.Location = p;
             
+            // 立即显示正确的时间
+            UpdateTimeDisplay();
+            // 启动计时器
+            timerWrk.Enabled = true;
         }
-        
-        private void Form1_Load(object sender, EventArgs e)
+
+        private void UpdateTimeDisplay()
         {
-
-            //任务栏高度
-            //Size OutTaskBarSize = new Size(SystemInformation.WorkingArea.Width, SystemInformation.WorkingArea.Height);
-            //Size ScreenSize = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
-            //this.Height = ScreenSize.Height - OutTaskBarSize.Height;
-            //Size TaskBarSize;
-
-            //TaskBarSize = new Size(
-            //                (ScreenSize.Width - (ScreenSize.Width - OutTaskBarSize.Width)),
-            //                (ScreenSize.Height - OutTaskBarSize.Height)
-             //               );
-            
-
-            wrk_seconds = 0; 
-
             if (wrk_seconds >= 10)
             {
                 lblSecond.Text = wrk_seconds.ToString();
@@ -66,16 +55,19 @@ namespace Reminder
                 lblSecond.Text = "0" + wrk_seconds.ToString();
             }
 
-            if (wrk_minutes>=10) {
+            if (wrk_minutes >= 10)
+            {
                 lblMin.Text = wrk_minutes.ToString();
             }
             else
             {
-                lblMin.Text = "0"+wrk_minutes.ToString();
+                lblMin.Text = "0" + wrk_minutes.ToString();
             }
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
             this.Opacity = 0.8;
-            
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -86,49 +78,32 @@ namespace Reminder
         /// <summary>
         /// 递归的方式倒计时
         /// </summary>
-        public  void timing()
+        public void timing()
         {
             Warn();
 
             if (wrk_seconds > 0)
             {
                 wrk_seconds = wrk_seconds - 1;
-                if (wrk_seconds >= 10)
-                {
-                    lblSecond.Text = wrk_seconds.ToString();
-                }
-                else
-                {
-                    lblSecond.Text = "0"+wrk_seconds.ToString();
-                }
-               
+                UpdateTimeDisplay();
             }
-            else //秒=0时，分钟-1
+            else
             {
                 timerWrk.Enabled = false;
                 wrk_minutes--;
-                if (wrk_minutes >= 10)
-                {
-                    lblMin.Text = wrk_minutes.ToString();
-                }
-                else
-                {
-                    lblMin.Text = "0"+wrk_minutes.ToString();
-                }
+                wrk_seconds = 59;
                 
-                if (wrk_minutes > -1) //若分钟不为0，秒回到60，继续递归
+                if (wrk_minutes > -1)
                 {
                     timerWrk.Enabled = true;
-                    wrk_seconds = 60;
-                    
+                    UpdateTimeDisplay();
                     timing();
                 }
                 else
                 {
-
                     this.Close();
                     RestFrm restFrm = new RestFrm(rst_minutes, wrk_m, input_flag);
-                    restFrm.ShowDialog();                   
+                    restFrm.ShowDialog();
                 }
             }
         }

@@ -24,18 +24,15 @@ namespace Reminder
                 }
             }
 
-            if (ExisFlag)//防止程序二次运行
+            if (ExisFlag)
             {
                 MessageBox.Show("程序运行中，见右下角系统托盘");
                 return;
             }
-            else
-            {
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new MainFrm());
-            }
-           
+
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new MainFrm());
         }
     }
 }

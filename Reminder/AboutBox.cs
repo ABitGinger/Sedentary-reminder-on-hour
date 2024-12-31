@@ -115,5 +115,10 @@ namespace Reminder
         {
             System.Diagnostics.Process.Start("https://github.com/wjbgis/Sedentary-reminder");
         }
+
+        private void linkLabel2_MouseClick(object sender, MouseEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/ABitGinger/Sedentary-reminder-on-hour");
+        }
     }
 }
