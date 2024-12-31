@@ -16,7 +16,7 @@
 
 
 
-[**== 以下内容来自原版README**](https://github.com/ABitGinger/Sedentary-reminder-on-hour/releases) ==
+**== 以下内容来自原版README ==**
 
 
 
